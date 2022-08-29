@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<div class="form">
+    <form [formGroup]="todoform">
+        <h1>Edit/Update Todo List</h1><br>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="text" class="form-control"  formControlName="title">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Notes</label>
+          <input type="text" class="form-control"  formControlName="notes">
+        </div>
+        <button type="button" class="btn btn-danger" (click)="todocancel()">cancel</button>
+        <button type="button" class="btn btn-primary" id="button" [disabled]="this.todoform.invalid" (click)="todoupdate()">update</button>
+      </form>
+</div>

@@ -1,0 +1,15 @@
+.form{
+    width: 60%;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+span{
+    color: red;
+}
+h1{
+    text-align: center;
+}
+button{
+    margin-left: 10px;
+}

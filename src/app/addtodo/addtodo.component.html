@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<div class="form">
+    <form [formGroup]="todoform">
+        <h1 >Add Todo List</h1> <br>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="text" class="form-control"  formControlName="title">
+            <div *ngIf="title.invalid && (title.dirty || title.touched)">
+                <span *ngIf="title.errors?.required">Title is Required</span>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Notes</label>
+          <input type="text" class="form-control"  formControlName="notes">
+          <div *ngIf="notes.invalid && (notes.dirty || notes.touched)">
+            <span *ngIf="notes.errors?.required">Notes is Required</span>
+          </div>
+        </div>
+         <button type="button" class="btn btn-danger" (click)="canceltodo()">Cancel</button>
+         <button type="button" class="btn btn-primary" id="button" [disabled]="this.todoform.invalid" (click)="submittodo()">Submit</button>
+      </form>
+</div>

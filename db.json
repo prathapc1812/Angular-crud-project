@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "title": "Task - 1",
+      "notes": "Wake up moring 5am.",
+      "id": 1
+    },
+    {
+      "title": "Task - 2",
+      "notes": "cycling at  moring 6am.",
+      "id": 2
+    },
+    {
+      "title": "Task - 3",
+      "notes": "Drink water",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

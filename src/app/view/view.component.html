@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+  <table id="view">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Notes</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let row of todolist">
+      <td>{{row.id}}</td>
+      <td>{{row.title}}</td>
+      <td>{{row.notes}}</td>
+      <td><button routerLink="/edit/{{row.id}}">Edit</button> | <button (click)="tododetete(row)">Delete</button></td>
+      
+    </tr>
+
+  </table>
